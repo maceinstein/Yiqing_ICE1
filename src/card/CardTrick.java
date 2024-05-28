@@ -36,6 +36,23 @@ public class CardTrick {
         // and search magicHand here
         //Then report the result here
         // add one luckcard hard code 2,clubs
+        Card luckyCard = new Card();
+        bool winning = false;
+        for (int i=0; i< magicHand.length;i++){
+            
+            if (luckyCard.suit == magicHand[i].suit && luckyCard.value == magicHand[i].value)
+            {   
+                winning = true;
+            } 
+            
+        }
+        if (winning == ture)
+        {
+            system.out.println("Wow, your card is in Magic Hand!");
+        }
+        else{
+        system.out.println("Sorry, your card is not in Magic Hand.");
+        }
     }
     
 }
