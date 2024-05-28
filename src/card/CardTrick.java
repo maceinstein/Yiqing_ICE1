@@ -32,7 +32,7 @@ public class CardTrick {
         //Then report the result here
         // add one luckcard hard code 2,clubs
         Card luckyCard = new Card();
-        bool winning = false;
+        boolean winning = false;
         for (int i=0; i< magicHand.length;i++){
             
             if (luckyCard.suit == magicHand[i].suit && luckyCard.value == magicHand[i].value)
@@ -41,7 +41,7 @@ public class CardTrick {
             } 
             
         }
-        if (winning == ture)
+        if (winning == true)
         {
             system.out.println("Wow, your card is in Magic Hand!");
         }
